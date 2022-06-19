@@ -1,0 +1,1 @@
+# hugo-my-theme
