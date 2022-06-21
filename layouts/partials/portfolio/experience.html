@@ -1,0 +1,13 @@
+<section id="experience" class="container center">
+    <div class="w100">
+        <h2 class="header">EXPERIENCE</h2>
+        {{ range $.Site.Data.experience }}
+        <div class="resume-flex">
+            <h4 class="list-header">{{ .role }}</h4>
+            <h5 class="list-header resume-flex-range">{{ .range }}</h5>
+        </div>
+        <h5 class="list-header-sub">{{ .company }}</h5>
+        <p class="list-content">{{ .summary }}</p>
+        {{ end }}
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section id="about" class="hero container center text-center">
+    <div>
+        <img src="{{ .Site.Params.profileImage | relURL }}" alt="" height="125px">
+        <div class="name">
+            <h1 class="name-handle">{{ .Site.Params.handle }}</h1>
+            {{ if .Site.Params.showFullName }}
+            <h1 class="name-full">{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}</h1>
+            {{ end }}
+        </div>
+        <p class="content">{{ .Content }}</p>
+    </div>
+</section>

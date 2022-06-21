@@ -1,0 +1,13 @@
+<section id="links" class="container center">
+    <div class="w100">
+        <h2 class="header">LINKS</h2>
+        {{ range $.Site.Data.links }}
+        <h4 class="list-header">{{ .grouping }}</h4>
+        <ul>
+        {{ range .links }}
+            <li>{{ .name }} | <a href="{{ .url }}" class="gray-link">{{ .url }}</a></li>
+        {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+</section>

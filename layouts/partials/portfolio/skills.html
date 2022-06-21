@@ -1,0 +1,13 @@
+<section id="skills" class="container center">
+    <div class="w100">
+        <h2 class="header">SKILLS</h2>
+        {{ range $.Site.Data.skills }}
+        <h4 class="list-header">{{ .grouping }}</h4>
+        <ul>
+        {{ range .skills }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<section id="education" class="container center">
+    <div class="w100">
+        <h2 class="header">EDUCATION</h2>
+        {{ range $.Site.Data.education }}
+        <h4 class="list-header">{{ .degree }} in {{ .major }}</h4>
+        <p>
+            <a class="gray-link" href="{{ .url }}">{{ .school }}</a>, {{ .range }}
+        </p>
+        {{ end }}
+    </div>
+</section>
